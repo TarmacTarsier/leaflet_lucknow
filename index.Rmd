@@ -1,0 +1,15 @@
+---
+title: "Lucknow Leaflet"
+author: "Aman Shrivastava"
+date: "16/10/2023"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+library(dplyr) # Load the dplyr package
+leaflet() %>%
+  setView(lng = 80.9462, lat =  26.8467, zoom = 13) %>%
+  addTiles() %>%
+  addMarkers(lng = 80.9462, lat =  26.8467, popup = "Hello, this is Lucknow")
+```
